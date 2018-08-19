@@ -1,7 +1,7 @@
 <template>
 <div class='container-fluid'>
   <div>
-<h1>Welcome to Travel Bug</h1>
+<h1 class='circle-text'>Welcome to Travel Bug</h1>
 </div>
 <b-jumbotron>
   <template slot="header">
@@ -22,7 +22,7 @@
                       name='password'
                       placeholder="Enter password">
         </b-form-input>
-      <b-button @click.prevent='bool' type="submit" id='signButton'>Sign In</b-button>
+      <b-button @click.prevent='bool' variant='danger' type="submit" id='signButton'>Sign In</b-button>
       <div id="alertMessage"><p></p></div>
  </b-form>
  </div>
@@ -134,4 +134,18 @@ export default {
 </script>
  
 <style scoped>
+.jumbotron {
+ background: rgba(0, 0, 0, 0.568); 
+}
+.circle-text {
+    display: table-cell;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    font: 18px "josefin sans", arial;
+}
 </style>
