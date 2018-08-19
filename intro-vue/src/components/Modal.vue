@@ -3,12 +3,12 @@
   <div>
 <h1>Welcome to Travel Bug</h1>
 </div>
-    <div>
+    <!-- <div>
         <div class='modal-container'>
           <div class='modal-header'>
             <slot name='login'>
       <div v-if='logseen' id='signin'>
-        <form>
+        <form> -->
           <h3>Come Explore</h3>
             <input placeholder='Username' type='text' name='username' id='username' value=''>
             <input placeholder='Password' type='password' name='password' id='password' value=''>
@@ -20,11 +20,11 @@
             <button v-on:click='seen ==! seen, logseen ==! logseen' type='submit' name='button'>Sign up now!</button>
             </div>
             <div id="alertMessage"><p></p></div>
-        </form>
+        <!-- </form>
         </div>
         </slot>
-        <slot name='register'>
-        <div v-if='seen' id='registrationForm'>
+        <slot name='register'> -->
+        <!-- <div v-if='seen' id='registrationForm'>
         <form @submit.prevent='sendCredentials()'>
           <h3>We are excited for your new ventures!</h3>
           <div>
@@ -52,8 +52,8 @@
         </div>
              </slot>       
                   </div>
-                </div>
-            </div>
+                </div> -->
+            <!-- </div> -->
     </div>
 </template>
 
@@ -113,36 +113,35 @@ export default {
 </script>
  
 <style scope>
-
 body {
-  background-color: #86BBD8;
+  background-color: #86bbd8;
 }
 
 h1 {
-  background-color: #86BBD8;
+  background-color: #86bbd8;
 }
 
 h3 {
-  color: #C9F0FF
+  color: #c9f0ff;
 }
 
 button {
-  background-color: #302B27;
-  color:#86BBD8;
-  border: #C9F0FF solid 2px;
-   border-radius: 5px;
+  background-color: #302b27;
+  color: #86bbd8;
+  border: #c9f0ff solid 2px;
+  border-radius: 5px;
 }
 
 label {
- color: #C9F0FF;
+  color: #c9f0ff;
 }
 .content {
-   background-color: #86BBD8;
+  background-color: #86bbd8;
 }
 .modal-container {
   display: flex;
   justify-content: center;
-    background-color: #5F758E;
+  background-color: #5f758e;
 }
 #signin {
   display: flex;
@@ -150,17 +149,17 @@ label {
 }
 
 #first {
-  background-color: #86BBD8;
+  background-color: #86bbd8;
 }
 
 #signButton {
-   background-color: #302B27;
-  color: #C9F0FF;
-  border: #C9F0FF solid 2px;
+  background-color: #302b27;
+  color: #c9f0ff;
+  border: #c9f0ff solid 2px;
   border-radius: 5px;
 }
 
 #alertMessage {
-  color: #C9F0FF;
+  color: #c9f0ff;
 }
 </style>
