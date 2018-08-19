@@ -1,39 +1,31 @@
 <template>
-<div class='content'>
+<div class='container-fluid'>
   <div>
 <h1>Welcome to Travel Bug</h1>
 </div>
-    <!-- <div>
-        <div class='modal-container'>
-          <div class='modal-header'>
-            <slot name='login'>
-      <div v-if='logseen' id='signin'>
-        <form> -->
+<b-jumbotron>
+  <template slot="header">
+    Come Explore
+  </template>
+  <template slot="lead">
           <div v-if='logseen' id='signin'>
-              <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-                          <h3>Come Explore</h3>
-      <b-form-group id="usernameGroup1"
-                    label="Username:"
-                    label-for="usernameInput1">
+              <b-form v-if="show">
         <b-form-input id="username"
                       type="text"
                       required
                       name='username'
                       placeholder="Enter Username">
         </b-form-input>
-      </b-form-group>
-      <b-form-group id="passwordGroup2"
-                    label="Password:"
-                    label-for="passwordInput2">
         <b-form-input id="password"
                       type="password"
                       required
                       name='password'
                       placeholder="Enter password">
         </b-form-input>
-      </b-form-group>
-      <b-button @click.prevent='bool' type="submit" variant="primary" id='signButton'>Sign In</b-button>
+      <b-button @click.prevent='bool' type="submit" id='signButton'>Sign In</b-button>
+      <div id="alertMessage"><p></p></div>
  </b-form>
+ </div>
             <!-- <input placeholder='Username' type='text' name='username' id='username' value=''>
             <input placeholder='Password' type='password' name='password' id='password' value=''> -->
             <!-- <input @click.prevent='bool' type='submit' value='Sign In' id='signButton'> -->
@@ -78,7 +70,10 @@
                   </div>
                 </div> -->
             <!-- </div> -->
-            </div>
+  </template>
+  <hr class="my-4">
+  <p>New to Travel Bug? Sign up here</p>
+            </b-jumbotron>
     </div>
 </template>
 
@@ -95,7 +90,7 @@ export default {
         username: "",
         password: ""
       },
-      profileData: null, 
+      profileData: null,
       show: true
     };
   },
@@ -138,54 +133,5 @@ export default {
 };
 </script>
  
-<style scope>
-body {
-  background-color: #86bbd8;
-}
-
-h1 {
-  background-color: #86bbd8;
-}
-
-h3 {
-  color: #c9f0ff;
-}
-
-button {
-  background-color: #302b27;
-  color: #86bbd8;
-  border: #c9f0ff solid 2px;
-  border-radius: 5px;
-}
-
-label {
-  color: #c9f0ff;
-}
-.content {
-  background-color: #86bbd8;
-}
-.modal-container {
-  display: flex;
-  justify-content: center;
-  background-color: #5f758e;
-}
-#signin {
-  display: flex;
-  flex-wrap: column;
-}
-
-#first {
-  background-color: #86bbd8;
-}
-
-#signButton {
-  background-color: #302b27;
-  color: #c9f0ff;
-  border: #c9f0ff solid 2px;
-  border-radius: 5px;
-}
-
-#alertMessage {
-  color: #c9f0ff;
-}
+<style scoped>
 </style>
