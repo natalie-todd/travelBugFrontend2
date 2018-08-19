@@ -139,12 +139,12 @@ export default {
 }
 .circle-text {
     display: table-cell;
-    height: 200px;
-    width: 200px;
+    height: 125px;
+    width: 125px;
     text-align: center;
     vertical-align: middle;
     border-radius: 50%;
-    background: #000;
+    background: #CC444A;
     color: #fff;
     font: 18px "josefin sans", arial;
 }
