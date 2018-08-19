@@ -9,17 +9,41 @@
             <slot name='login'>
       <div v-if='logseen' id='signin'>
         <form> -->
-          <h3>Come Explore</h3>
-            <input placeholder='Username' type='text' name='username' id='username' value=''>
-            <input placeholder='Password' type='password' name='password' id='password' value=''>
-            <input @click.prevent='bool' type='submit' value='Sign In' id='signButton'>
-            <div>
+          <div v-if='logseen' id='signin'>
+              <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+                          <h3>Come Explore</h3>
+      <b-form-group id="usernameGroup1"
+                    label="Username:"
+                    label-for="usernameInput1">
+        <b-form-input id="username"
+                      type="text"
+                      required
+                      name='username'
+                      placeholder="Enter Username">
+        </b-form-input>
+      </b-form-group>
+      <b-form-group id="passwordGroup2"
+                    label="Password:"
+                    label-for="passwordInput2">
+        <b-form-input id="password"
+                      type="password"
+                      required
+                      name='password'
+                      placeholder="Enter password">
+        </b-form-input>
+      </b-form-group>
+      <b-button @click.prevent='bool' type="submit" variant="primary" id='signButton'>Sign In</b-button>
+ </b-form>
+            <!-- <input placeholder='Username' type='text' name='username' id='username' value=''>
+            <input placeholder='Password' type='password' name='password' id='password' value=''> -->
+            <!-- <input @click.prevent='bool' type='submit' value='Sign In' id='signButton'> -->
+            <!-- <div>
             <label for='login'>New to Travel Bug?</label>
             </div>
             <div>
             <button v-on:click='seen ==! seen, logseen ==! logseen' type='submit' name='button'>Sign up now!</button>
             </div>
-            <div id="alertMessage"><p></p></div>
+            <div id="alertMessage"><p></p></div> -->
         <!-- </form>
         </div>
         </slot>
@@ -54,6 +78,7 @@
                   </div>
                 </div> -->
             <!-- </div> -->
+            </div>
     </div>
 </template>
 
@@ -62,7 +87,7 @@ export default {
   name: "Modal",
   data() {
     return {
-      seen: false,
+      // seen: false,
       logseen: true,
       name: "modal",
       signinUrl: "https://travel-bug-backend.herokuapp.com/profiles",
@@ -70,7 +95,8 @@ export default {
         username: "",
         password: ""
       },
-      profileData: null
+      profileData: null, 
+      show: true
     };
   },
   mounted() {
