@@ -1,6 +1,6 @@
 <template>
 <div class='container-fluid'>
-  <div>
+  <div class='circle'>
 <h1 class='circle-text'>Welcome to Travel Bug</h1>
 </div>
 <b-jumbotron>
@@ -137,6 +137,7 @@ export default {
 .jumbotron {
  background: rgba(0, 0, 0, 0.568); 
 }
+
 .circle-text {
     display: table-cell;
     height: 125px;

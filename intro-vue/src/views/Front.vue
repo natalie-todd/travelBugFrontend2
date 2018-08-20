@@ -17,14 +17,9 @@ export default {
 </script>
 
 <style>
-template {
+/* template {
   min-height: 100%;
-}
+} */
 
-#first{
-  display: flex;
-  flex-direction: column;
-  height: 90vh;
-  justify-content: space-between;
-}
+
 </style>
