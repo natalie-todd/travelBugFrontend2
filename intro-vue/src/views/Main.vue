@@ -4,9 +4,7 @@
     <div class='header'>
     <Header />
     </div>
-      <div class='circle'>
-<h1 class='circle-text'>Welcome to Travel Bug</h1>
-</div>
+
     <div>
     <div>
     <AddCountry />
