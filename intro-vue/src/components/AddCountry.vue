@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-form @submit="onSubmit" class='country-form'>
+    <b-form @submit="onSubmit" @reset='onReset' class='country-form'>
          <label for='addToList'>Add to Your Bucket List</label>
             <b-form-input  
             v-model='form.country_name' 

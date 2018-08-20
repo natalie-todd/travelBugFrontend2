@@ -9,7 +9,6 @@ import router from './router';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
 import Main from './views/Main';
-import Footer from './components/Footer';
 import * as VueGoogleMaps from 'vue2-google-maps'
 
 Vue.use(VueGoogleMaps, {
@@ -31,7 +30,6 @@ new Vue({
   el: '#app',
   router,
   Main,
-  Footer,
   components: { App },
   template: '<App/>',
 });

@@ -17,9 +17,6 @@ export default {
 </script>
 
 <style>
-/* template {
-  min-height: 100%;
-} */
 
 
 </style>
