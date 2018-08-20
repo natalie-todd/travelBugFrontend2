@@ -71,8 +71,6 @@
                 </div> -->
             <!-- </div> -->
   </template>
-  <!-- <hr class="my-4">
-  <p>New to Travel Bug? Sign up here</p> -->
             </b-jumbotron>
     </div>
 </template>
@@ -135,7 +133,7 @@ export default {
  
 <style scoped>
 .jumbotron {
- background: rgba(0, 0, 0, 0.568); 
+  background: rgba(0, 0, 0, 0.568);
 }
 .lead {
   display: flex;
@@ -143,14 +141,14 @@ export default {
   justify-content: center;
 }
 .circle-text {
-    display: table-cell;
-    height: 125px;
-    width: 125px;
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 50%;
-    background: #CC444A;
-    color: #fff;
-    font: 18px "josefin sans", arial;
+  display: table-cell;
+  height: 125px;
+  width: 125px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: #cc444a;
+  color: #fff;
+  font: 18px "josefin sans", arial;
 }
 </style>
