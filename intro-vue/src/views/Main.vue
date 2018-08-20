@@ -4,7 +4,7 @@
     <div class='header'>
     <Header />
     </div>
-    <div class='horizontal'>
+    <div>
     <div>
     <AddCountry />
     </div>
@@ -39,31 +39,5 @@ export default {
 </script>
 
 <style>
-.travel-bug {
-  background-color: #86BBD8;
-}
-.horizontal {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: #C9F0FF;
-}
-.header {
-  display: flex;
-  justify-content: flex-end;
-  background-color: #C9F0FF;
-}
-.destination {
-  background-color: #C9F0FF;
-}
-.front {
-  background-color: #C9F0FF;
-}
-#main {
-  display: flex;
-  flex-direction: column;
-  background: cover;
-  justify-content: space-between;
-  background-color: #C9F0FF;
-}
+
 </style>

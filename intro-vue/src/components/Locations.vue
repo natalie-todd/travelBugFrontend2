@@ -38,52 +38,5 @@ export default {
 </script>
  
 <style>
-.destination {
-  padding: 8px;
-}
 
-.destination-ul{
-  background-color: #86BBD8;
-  display: flex;
-  flex-flow: column wrap;
-  list-style-type: none;
-  margin-top: 109px;
-  border: 2px solid black;
-  border-radius: 5px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  
-}
-
-.destination-li{
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  margin-left: -30px;
-  border: 1px; 
-  padding-right: 5px;
-}
-
-.destination-h3{
-  align-items: center; 
-  border: 2px solid black;
-  border-radius: 5px;
-  width: 150px;
-    background-color: #C9F0FF;
-  color: black;
-  text-shadow: 2px 2px silver;
-  
-}
-
-.destination-goalDate{
-  color: black;
-  
-  text-shadow: 2px 2px silver;
-}
-.destination-activities{
-  color: black;
-   
-  text-shadow: 2px 2px silver;
-}
 </style>

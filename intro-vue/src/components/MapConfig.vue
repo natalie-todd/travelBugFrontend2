@@ -86,10 +86,10 @@ export default {
 };
 </script>
 <style>
-.map-h2{
+/* .map-h2{
     margin-left: -150px;
 }
 .gmap-maps{
     margin-bottom: 20px;
-}
+} */
 </style>
