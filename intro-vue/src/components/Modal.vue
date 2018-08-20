@@ -71,8 +71,8 @@
                 </div> -->
             <!-- </div> -->
   </template>
-  <hr class="my-4">
-  <p>New to Travel Bug? Sign up here</p>
+  <!-- <hr class="my-4">
+  <p>New to Travel Bug? Sign up here</p> -->
             </b-jumbotron>
     </div>
 </template>
@@ -137,7 +137,11 @@ export default {
 .jumbotron {
  background: rgba(0, 0, 0, 0.568); 
 }
-
+.lead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .circle-text {
     display: table-cell;
     height: 125px;
