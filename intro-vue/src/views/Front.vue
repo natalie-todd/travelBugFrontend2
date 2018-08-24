@@ -17,8 +17,6 @@ export default {
 </script>
 
 <style>
-body {
-  /* background-image: url('./assets/antique-binoculars.jpg'); */
-}
+
 
 </style>
