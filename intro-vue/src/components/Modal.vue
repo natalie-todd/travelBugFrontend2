@@ -1,10 +1,11 @@
 <template>
 <div class='row-hero'>
   <!-- <b-img src="https://www.gazprom-germania.de/typo3temp/_processed_/5/d/csm_GAZ_NG_03-1_Effizienz_02_90e3424891.jpg" fluid alt="Responsive image" /> -->
-    <div class='container'>
+
+<b-jumbotron>
+      <div class='container'>
 <h1 class='circle-text'>Welcome to Travel Bug</h1>
 </div>
-<b-jumbotron>
   <template slot="header">
     Come Explore
   </template>
@@ -134,7 +135,6 @@ export default {
  
 <style>
 b-img {
-
 }
 .jumbotron {
   background: rgba(0, 0, 0, 0.568);
@@ -143,6 +143,7 @@ b-img {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column-reverse;
 }
 .circle-text {
   display: table-cell;
