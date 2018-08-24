@@ -1,6 +1,6 @@
 <template>
 <div class='row-hero'>
-  <b-img src="https://www.gazprom-germania.de/typo3temp/_processed_/5/d/csm_GAZ_NG_03-1_Effizienz_02_90e3424891.jpg" fluid alt="Responsive image" />
+  <!-- <b-img src="https://www.gazprom-germania.de/typo3temp/_processed_/5/d/csm_GAZ_NG_03-1_Effizienz_02_90e3424891.jpg" fluid alt="Responsive image" /> -->
     <div class='container'>
 <h1 class='circle-text'>Welcome to Travel Bug</h1>
 </div>

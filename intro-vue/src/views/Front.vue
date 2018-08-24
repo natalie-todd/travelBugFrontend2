@@ -2,21 +2,20 @@
 <div id='first'>
     <router-view></router-view>
         <Modal />
+            <Hero />
     </div>
-    
 </template>
-
 <script>
-import Modal from '@/components/Modal';
+import Modal from "@/components/Modal";
+import Hero from "@/components/Hero";
 export default {
-  name: 'first',
+  name: "first",
   components: {
-    Modal
-  },
+    Modal,
+    Hero
+  }
 };
 </script>
 
 <style>
-
-
 </style>
