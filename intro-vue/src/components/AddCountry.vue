@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-form @submit="onSubmit" @reset='onReset' class='country-form'>
-         <label for='addToList'>Add to Your Bucket List</label>
+         <h2 for='addToList' class='op'>2. Add to Your Bucket List</h2>
             <b-form-input  
             v-model='form.country_name' 
             placeholder='Country Name' 
@@ -83,4 +83,14 @@ export default {
 </script>
  
 <style>
+.country-form {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.op {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  border-radius: 4px;
+}
 </style>

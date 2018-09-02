@@ -1,16 +1,16 @@
 <template>
   <div>
-    <div>
-      <h2 class="map-h2">Search the map for locations you want to visit!</h2>
-      <label>
-      </label>
-      <br/>
-    </div>
-    <br>
+    <!-- <div> -->
+      <h2 class="map-h2 op">1. Search for locations you want to visit!</h2>
+      <!-- <label>
+      </label> -->
+      <!-- <br/> -->
+    <!-- </div> -->
+    <!-- <br> -->
     <gmap-map
       :center="center"
       :zoom="2"
-      style="width:800px;  height: 500px;"
+      style="width:400px;  height: 500px;"
       @click = "handleClick"
       class="gmap-maps"
     >
@@ -86,10 +86,4 @@ export default {
 };
 </script>
 <style>
-/* .map-h2{
-    margin-left: -150px;
-}
-.gmap-maps{
-    margin-bottom: 20px;
-} */
 </style>
