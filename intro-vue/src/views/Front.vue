@@ -1,21 +1,25 @@
 <template>
 <div id='first'>
     <router-view></router-view>
+    <Header />
         <Modal />
-            <Hero />
+            <!-- <Hero /> -->
     </div>
 </template>
 <script>
+import Header from "@/components/Header";
 import Modal from "@/components/Modal";
-import Hero from "@/components/Hero";
 export default {
   name: "first",
   components: {
-    Modal,
-    Hero
+    Header, 
+    Modal
   }
 };
 </script>
 
 <style>
+.first {
+  height: 100vh;
+}
 </style>
