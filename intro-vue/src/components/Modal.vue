@@ -1,6 +1,8 @@
 <template>
 <div class='row-hero'>
-
+ <div class='column'>
+  <h1>Come Explore</h1>
+  </div>
 <b-jumbotron>
   <template slot="lead">
           <div v-if='logseen' id='signin'>
@@ -87,6 +89,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .jumbotron {
   background: rgba(0, 0, 0, 0.568);
