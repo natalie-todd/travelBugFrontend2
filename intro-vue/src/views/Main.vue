@@ -4,17 +4,19 @@
     <div class='header'>
     <Header />
     </div>
-
     <div>
+      <div class= 'addToList'>
+    <div>
+    <MapConfig />
+    </div>
     <div>
     <AddCountry />
     </div>
     <div>
     <Locations />
     </div>
-    <div>
-    <MapConfig />
     </div>
+
     </div>
     </div>
     
@@ -22,16 +24,16 @@
 
 <script>
 import Header from "@/components/Header";
+import MapConfig from "@/components/MapConfig";
 import AddCountry from "@/components/AddCountry";
 import Locations from "@/components/Locations";
-import MapConfig from "@/components/MapConfig";
 export default {
   name: "Main",
   components: {
     Header,
-    AddCountry,
-    Locations,
     MapConfig,
+    AddCountry,
+    Locations
   }
 };
 </script>
@@ -47,5 +49,10 @@ export default {
   background: #cc444a;
   color: #fff;
   font: 18px "josefin sans", arial;
+}
+
+.addToList {
+  display: flex;
+  flex-direction: row;
 }
 </style>
