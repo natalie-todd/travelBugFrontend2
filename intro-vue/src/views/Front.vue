@@ -16,7 +16,7 @@ export default {
   }
 };
 
-document.body.style.backgroundImage = "url('https://cdn.pixabay.com/photo/2017/06/07/15/53/new-zealand-2380705_1280.jpg')";
+document.body.style.backgroundImage = "url('https://www.maxpixel.net/static/photo/2x/Nature-Pakistan-Travel-Landscape-Forest-Tree-Lake-2366663.jpg')";
 </script>
 
 <style>
