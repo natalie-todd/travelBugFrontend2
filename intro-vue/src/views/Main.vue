@@ -4,22 +4,20 @@
     <div class='header'>
     <Header />
     </div>
-    <div>
-      <div class= 'addToList'>
-    <div>
+    <b-container class="bv-example-row">
+      <b-row>
+    <b-col>
     <MapConfig />
-    </div>
-    <div>
+    </b-col>
+    <b-col>
     <AddCountry />
-    </div>
-    <div>
+    </b-col>
+    <b-col>
     <Locations />
+    </b-col>
+    </b-row>
+    </b-container>
     </div>
-    </div>
-
-    </div>
-    </div>
-    
 </template>
 
 <script>
@@ -50,9 +48,11 @@ export default {
   color: #fff;
   font: 18px "josefin sans", arial;
 }
-
-.addToList {
-  display: flex;
-  flex-direction: row;
+body {
+  height: 100vh;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background: fluid;
+  font-family: "Josefin Sans", sans-serif;
 }
 </style>
