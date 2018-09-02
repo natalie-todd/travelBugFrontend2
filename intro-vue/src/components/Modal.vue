@@ -134,10 +134,14 @@ export default {
 </script>
  
 <style>
-b-img {
+.row-hero {
+  display: flex;
+  justify-content: center;
 }
 .jumbotron {
   background: rgba(0, 0, 0, 0.568);
+    width: 100%;
+    margin-top: 15vh;
 }
 .lead {
   display: flex;
