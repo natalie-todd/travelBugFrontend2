@@ -1,13 +1,14 @@
 <template>
   <div class="destination">
       <h2 class='op'>3. Go Explore!</h2>
-    <ul class="destination-ul">
+    <ol class="destination-ol">
         <li v-for="post in locationData" :key="post.id" class="destination-li">
-            <h3 class="destination-h3">Country: {{ post.country_name }}</h3>
-            <h4 class="destination-goalDate">Date: {{ post.goal_date | moment('dddd, MMMM Do YYYY')}}</h4>
-            <h4 class="destination-activities">Activity: {{ post.activities }}</h4>
+            <p class="destination-p">Country: {{ post.country_name }}</p>
+            <p class="destination-goalDate">Date: {{ post.goal_date | moment('dddd, MMMM Do YYYY')}}</p>
+            <p class="destination-activities">Activity: {{ post.activities }}</p>
+            <hr>
         </li>
-    </ul>
+    </ol>
   </div>
 </template>
 
@@ -39,5 +40,14 @@ export default {
 </script>
  
 <style>
-
+.destination-ol {
+      background-color: #cc444a;
+      border-radius: 6px;
+}
+.destination-li {
+    /* border-style: solid; */
+    color: white;
+    padding: 4px;
+    
+}
 </style>

@@ -37,17 +37,6 @@ export default {
 </script>
 
 <style>
-.circle-text {
-  display: table-cell;
-  height: 125px;
-  width: 125px;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 50%;
-  background: #cc444a;
-  color: #fff;
-  font: 18px "josefin sans", arial;
-}
 body {
   height: 100vh;
   background-size: 100% auto;
