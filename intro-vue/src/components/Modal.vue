@@ -94,8 +94,6 @@ export default {
 }
 .jumbotron {
   background: rgba(0, 0, 0, 0.568);
-    /* width: 100%; */
-    /* margin-top: 15vh; */
 }
 .lead {
   display: flex;
@@ -103,5 +101,8 @@ export default {
   justify-content: center;
   flex-direction: column-reverse;
 }
-
+#signButton {
+  border-style: solid;
+  border-color: black;
+}
 </style>

@@ -39,5 +39,7 @@ export default {
   background: #cc444a;
   color: #fff;
   font: 18px "josefin sans", arial;
+  border-style: solid;
+  border-color: black;
 }
 </style>
