@@ -1,12 +1,12 @@
 <template>
 <div>
-    <b-nav class='logout'>
+    <!-- <b-nav class='logout'> -->
         <div class='circle'>
 <h1 class='circle-text'>Welcome to Travel Bug</h1>
 </div>
 
-    <router-link to='/' tag='button' class="header-1-logout">Logout</router-link>
-  </b-nav>
+    <!-- <router-link to='/' tag='button' class="header-1-logout">Logout</router-link> -->
+  <!-- </b-nav> -->
   </div>
 </template>
 
@@ -22,8 +22,22 @@ export default {
 </script>
  
 <style>
-.logout {
+/* .logout {
   display: flex;
   justify-content: space-between;
+} */
+.circle{
+  margin: 2%;
+}
+.circle-text {
+  display: table-cell;
+  height: 125px;
+  width: 125px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: #cc444a;
+  color: #fff;
+  font: 18px "josefin sans", arial;
 }
 </style>
