@@ -1,5 +1,6 @@
 <template>
   <div class="destination">
+      <h2 class='op'>3. Go Explore!</h2>
     <ul class="destination-ul">
         <li v-for="post in locationData" :key="post.id" class="destination-li">
             <h3 class="destination-h3">Country: {{ post.country_name }}</h3>
