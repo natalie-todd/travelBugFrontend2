@@ -10,7 +10,7 @@
     <gmap-map
       :center="center"
       :zoom="2"
-      style="width:800px;  height: 500px;"
+      style="width:400px;  height: 250px;"
       @click = "handleClick"
       class="gmap-maps"
     >
@@ -86,10 +86,4 @@ export default {
 };
 </script>
 <style>
-/* .map-h2{
-    margin-left: -150px;
-}
-.gmap-maps{
-    margin-bottom: 20px;
-} */
 </style>
