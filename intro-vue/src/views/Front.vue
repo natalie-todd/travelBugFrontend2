@@ -29,7 +29,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background: fluid;
-  /* width: 100%; */
+  font-family: "Josefin Sans", sans-serif;
 }
 @media (max-width: 767px) {
   body {
