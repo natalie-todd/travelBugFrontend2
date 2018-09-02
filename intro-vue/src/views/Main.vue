@@ -4,7 +4,8 @@
     <div class='header'>
     <Header />
     </div>
-    <div class='horizontal'>
+
+    <div>
     <div>
     <AddCountry />
     </div>
@@ -15,7 +16,6 @@
     <MapConfig />
     </div>
     </div>
-    <Footer />
     </div>
     
 </template>
@@ -25,7 +25,6 @@ import Header from "@/components/Header";
 import AddCountry from "@/components/AddCountry";
 import Locations from "@/components/Locations";
 import MapConfig from "@/components/MapConfig";
-import Footer from "@/components/Footer";
 export default {
   name: "Main",
   components: {
@@ -33,37 +32,20 @@ export default {
     AddCountry,
     Locations,
     MapConfig,
-    Footer
   }
 };
 </script>
 
 <style>
-.travel-bug {
-  background-color: #86BBD8;
-}
-.horizontal {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: #C9F0FF;
-}
-.header {
-  display: flex;
-  justify-content: flex-end;
-  background-color: #C9F0FF;
-}
-.destination {
-  background-color: #C9F0FF;
-}
-.front {
-  background-color: #C9F0FF;
-}
-#main {
-  display: flex;
-  flex-direction: column;
-  background: cover;
-  justify-content: space-between;
-  background-color: #C9F0FF;
+.circle-text {
+  display: table-cell;
+  height: 125px;
+  width: 125px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: #cc444a;
+  color: #fff;
+  font: 18px "josefin sans", arial;
 }
 </style>

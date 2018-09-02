@@ -1,12 +1,7 @@
 <template>
-<div class='container-fluid'>
-  <div>
-<h1 class='circle-text'>Welcome to Travel Bug</h1>
-</div>
+<div class='row-hero'>
+
 <b-jumbotron>
-  <template slot="header">
-    Come Explore
-  </template>
   <template slot="lead">
           <div v-if='logseen' id='signin'>
               <b-form v-if="show">
@@ -26,53 +21,7 @@
       <div id="alertMessage"><p></p></div>
  </b-form>
  </div>
-            <!-- <input placeholder='Username' type='text' name='username' id='username' value=''>
-            <input placeholder='Password' type='password' name='password' id='password' value=''> -->
-            <!-- <input @click.prevent='bool' type='submit' value='Sign In' id='signButton'> -->
-            <!-- <div>
-            <label for='login'>New to Travel Bug?</label>
-            </div>
-            <div>
-            <button v-on:click='seen ==! seen, logseen ==! logseen' type='submit' name='button'>Sign up now!</button>
-            </div>
-            <div id="alertMessage"><p></p></div> -->
-        <!-- </form>
-        </div>
-        </slot>
-        <slot name='register'> -->
-        <!-- <div v-if='seen' id='registrationForm'>
-        <form @submit.prevent='sendCredentials()'>
-          <h3>We are excited for your new ventures!</h3>
-          <div>
-            <input placeholder='First Name' type='text' name='firstName' id='firstName' value=''>
-            </div>
-            <div>
-            <input placeholder='Last Name' type='text' name='lastName' id='lastName' value=''>
-            </div>
-            <div>
-            <input placeholder='Email' type='text' name='email' id='email' value=''>
-            </div>
-            <div>
-            <input placeholder='Username' type='text' name='username' id='username' value=''>
-            </div>
-            <div>
-            <input placeholder='Password' type='text' name='passWord' id='passWord' value=''>
-            </div>
-            <div>
-            <input placeholder='Confirm Password' type='text' name='confirmPassword' id='confirmPassword' value=''>
-            </div>
-            <div>
-            <router-link to='/main' tag='button'>Create Profile</router-link>
-            </div>
-        </form>
-        </div>
-             </slot>       
-                  </div>
-                </div> -->
-            <!-- </div> -->
   </template>
-  <hr class="my-4">
-  <p>New to Travel Bug? Sign up here</p>
             </b-jumbotron>
     </div>
 </template>
@@ -133,19 +82,24 @@ export default {
 };
 </script>
  
-<style scoped>
+<style>
+.row-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .jumbotron {
- background: rgba(0, 0, 0, 0.568); 
+  background: rgba(0, 0, 0, 0.568);
 }
-.circle-text {
-    display: table-cell;
-    height: 125px;
-    width: 125px;
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 50%;
-    background: #CC444A;
-    color: #fff;
-    font: 18px "josefin sans", arial;
+.lead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
 }
+#signButton {
+  border-style: solid;
+  border-color: black;
+}
+
 </style>

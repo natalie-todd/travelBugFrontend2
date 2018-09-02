@@ -1,30 +1,39 @@
 <template>
 <div id='first'>
     <router-view></router-view>
+    <Header />
         <Modal />
     </div>
-    
 </template>
-
 <script>
-import Modal from '@/components/Modal';
+import Header from "@/components/Header";
+import Modal from "@/components/Modal";
 export default {
-  name: 'first',
+  name: "first",
   components: {
+    Header,
     Modal
-  },
+  }
 };
+
+document.body.style.backgroundImage =
+  "url('https://www.maxpixel.net/static/photo/2x/Nature-Pakistan-Travel-Landscape-Forest-Tree-Lake-2366663.jpg')";
 </script>
 
 <style>
-template {
-  min-height: 100%;
+/* .first {
+  height: 100vh;
+} */
+body {
+  height: 100vh;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background: fluid;
+  font-family: "Josefin Sans", sans-serif;
 }
-
-#first{
-  display: flex;
-  flex-direction: column;
-  height: 90vh;
-  justify-content: space-between;
+@media (max-width: 767px) {
+  body {
+    background: fixed;
+  }
 }
 </style>

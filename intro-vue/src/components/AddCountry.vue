@@ -1,23 +1,41 @@
 <template>
-<div id='country'>
-     <form @submit='onSubmit' class="country-form">
+  <div>
+    <b-form @submit="onSubmit" @reset='onReset' class='country-form'>
          <label for='addToList'>Add to Your Bucket List</label>
-         <div>
-            <input  v-model='form.country_name' placeholder='Country Name' type='text' name='country_name' id='country_name' value=''>
-          </div>
-         <div>
-            <input v-model='form.goal_date' placeholder='Goal Date' type='text' name='goal_date' id='goal_date' value=''>
-          </div>
-          <div>
-            <textarea  v-model='form.activities' placeholder='Activities you want to do!' type='text' name='activities' id='activities' value=''>Add activities here!</textarea>
-          </div>
-          <div>
-            <textarea  v-model='form.visited' placeholder='True or False' type='text' name='visited' id='visited' value=''></textarea>
-          </div>
-            <button type='submit' name='button'  class="country-form-button" onClick="setTimeout('history.go(0);',1000)">Add Now!</button>
-            
-        </form>
-    </div>
+            <b-form-input  
+            v-model='form.country_name' 
+            placeholder='Country Name' 
+            type='text' 
+            name='country_name' 
+            required
+            id='country_name' 
+            value=''>
+              </b-form-input>
+            <b-form-input 
+            v-model='form.goal_date' 
+            placeholder='Goal Date' 
+            type='text' 
+            required
+            name='goal_date' 
+            id='goal_date' 
+            value=''>
+            </b-form-input>
+            <b-form-input   
+            v-model='form.activities' 
+            placeholder='Activities you want to do!' 
+            type='text' 
+            name='activities' 
+            id='activities' 
+            value=''>Add activities here!
+              </b-form-input>
+            <button 
+            type='submit' 
+            name='button'  
+            class="country-form-button" 
+            onClick="setTimeout('history.go(0);',1000)">Add Now!
+            </button>
+        </b-form>
+  </div>
 </template>
 
 <script>
@@ -65,19 +83,4 @@ export default {
 </script>
  
 <style>
-.country-form {
-  margin-top: 120px;
-}
-
-.country-form-button {
-  color: black;
-  background-color: #86bbd8;
-  border-radius: 5px;
-  border: 2px solid black;
-}
-
-.country-form-button:hover {
-  color: #5f758e;
-  background-color: black;
-}
 </style>
