@@ -1,9 +1,7 @@
 <template>
 <div class='row-hero'>
+
 <b-jumbotron>
-  <template slot="header">
-    Come Explore
-  </template>
   <template slot="lead">
           <div v-if='logseen' id='signin'>
               <b-form v-if="show">
@@ -103,10 +101,5 @@ export default {
   border-style: solid;
   border-color: black;
 }
-
-/* @media (max-width: 767px) {
-  .Header {
-
-  } */
 
 </style>

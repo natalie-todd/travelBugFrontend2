@@ -4,7 +4,9 @@
         <div class='circle'>
 <h1 class='circle-text'>Welcome to Travel Bug</h1>
 </div>
-
+  <div class='column'>
+  <h1>Come Explore</h1>
+  </div>
     <!-- <router-link to='/' tag='button' class="header-1-logout">Logout</router-link> -->
   <!-- </b-nav> -->
   </div>
@@ -41,5 +43,9 @@ export default {
   font: 18px "josefin sans", arial;
   border-style: solid;
   border-color: black;
+}
+.column {
+  display: flex;
+  justify-content: center;
 }
 </style>
