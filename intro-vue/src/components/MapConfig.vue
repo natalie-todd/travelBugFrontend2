@@ -10,7 +10,7 @@
     <gmap-map
       :center="center"
       :zoom="2"
-      style="width:400px;  height: 550px;"
+      style="width:400px;  height: 500px;"
       @click = "handleClick"
       class="gmap-maps"
     >
