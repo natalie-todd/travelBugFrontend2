@@ -101,5 +101,7 @@ export default {
   border-style: solid;
   border-color: black;
 }
-
+#alertMessage {
+  background: rgba(255, 255, 255, 0.4);
+}
 </style>
