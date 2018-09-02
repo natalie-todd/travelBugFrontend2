@@ -3,9 +3,6 @@
   <!-- <b-img src="https://www.gazprom-germania.de/typo3temp/_processed_/5/d/csm_GAZ_NG_03-1_Effizienz_02_90e3424891.jpg" fluid alt="Responsive image" /> -->
 
 <b-jumbotron>
-      <div class='container'>
-<h1 class='circle-text'>Welcome to Travel Bug</h1>
-</div>
   <template slot="header">
     Come Explore
   </template>
@@ -106,15 +103,5 @@ export default {
   justify-content: center;
   flex-direction: column-reverse;
 }
-.circle-text {
-  display: table-cell;
-  height: 125px;
-  width: 125px;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 50%;
-  background: #cc444a;
-  color: #fff;
-  font: 18px "josefin sans", arial;
-}
+
 </style>
