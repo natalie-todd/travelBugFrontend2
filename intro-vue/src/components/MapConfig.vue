@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- <div> -->
-      <h2 class="map-h2 op">1. Search for locations you want to visit!</h2>
+      <h2 class="map-h2 op">1. Search for locations you want to visit</h2>
       <!-- <label>
       </label> -->
       <!-- <br/> -->
