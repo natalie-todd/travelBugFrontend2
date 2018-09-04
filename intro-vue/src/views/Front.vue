@@ -21,9 +21,7 @@ document.body.style.backgroundImage =
 </script>
 
 <style>
-/* .first {
-  height: 100vh;
-} */
+
 body {
   height: 100vh;
   background-size: 100% auto;

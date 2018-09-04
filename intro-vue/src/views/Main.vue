@@ -47,6 +47,7 @@ body {
   background: fluid;
   font-family: "Josefin Sans", sans-serif;
 }
+
 .header {
   display: flex;
   justify-content: space-between;

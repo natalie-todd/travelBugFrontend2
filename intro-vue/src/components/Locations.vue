@@ -45,7 +45,6 @@ export default {
       border-radius: 6px;
 }
 .destination-li {
-    /* border-style: solid; */
     color: white;
     padding: 4px;
     

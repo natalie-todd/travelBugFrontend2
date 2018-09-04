@@ -18,4 +18,10 @@ export default {
 </script>
 
 <style>
+button {
+    margin: 2vh;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: black;
+}
 </style>
