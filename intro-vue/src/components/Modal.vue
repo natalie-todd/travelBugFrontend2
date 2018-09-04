@@ -24,6 +24,10 @@
  </b-form>
  </div>
   </template>
+  <template slot='register'>
+    <div v-if='registerSeen' id='registerForm'>
+      </div>
+    </template>
             </b-jumbotron>
     </div>
 </template>
@@ -33,7 +37,7 @@ export default {
   name: "Modal",
   data() {
     return {
-      // seen: false,
+      registerSeen: false,
       logseen: true,
       name: "modal",
       signinUrl: "https://travel-bug-backend.herokuapp.com/profiles",
