@@ -3,6 +3,7 @@
     <router-view></router-view>
     <div class='header'>
     <Header />
+    <SignOut />
     </div>
     <b-container class="bv-example-row">
       <b-row>
@@ -22,6 +23,7 @@
 
 <script>
 import Header from "@/components/Header";
+import SignOut from "@/components/SignOut";
 import MapConfig from "@/components/MapConfig";
 import AddCountry from "@/components/AddCountry";
 import Locations from "@/components/Locations";
@@ -29,6 +31,7 @@ export default {
   name: "Main",
   components: {
     Header,
+    SignOut,
     MapConfig,
     AddCountry,
     Locations
@@ -43,5 +46,9 @@ body {
   background-repeat: no-repeat;
   background: fluid;
   font-family: "Josefin Sans", sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
 }
 </style>
