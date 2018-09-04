@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-form @submit="onSubmit" @reset='onReset' class='country-form'>
+    <b-form @submit="onSubmit" class='country-form'>
          <h2 for='addToList' class='op'>2. Add to Your Bucket List</h2>
             <b-form-input  
             v-model='form.country_name' 
@@ -28,11 +28,19 @@
             id='activities' 
             value=''>Add activities here!
               </b-form-input>
+              <b-form-input  
+              v-model='form.visited' 
+              placeholder=' Visited? True or False' 
+              type='text' 
+              name='visited' 
+              id='visited' value=''>
+              </b-form-input>
             <button 
             type='submit' 
             name='button'  
             class="country-form-button" 
-            onClick="setTimeout('history.go(0);',1000)">Add Now!
+        
+            >Add Now!
             </button>
         </b-form>
   </div>
@@ -76,7 +84,12 @@ export default {
             throw err;
           }
           return resp.json();
-        });
+        })
+        .then(
+          setTimeout(function() {
+            location.reload();
+          }, 1000)
+        );
     }
   }
 };
@@ -84,7 +97,7 @@ export default {
  
 <style>
 .country-form {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
 }
