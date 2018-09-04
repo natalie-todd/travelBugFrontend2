@@ -21,10 +21,6 @@ export default {
 </script>
  
 <style>
-/* .logout {
-  display: flex;
-  justify-content: space-between;
-} */
 .circle{
   margin: 2%;
 }
