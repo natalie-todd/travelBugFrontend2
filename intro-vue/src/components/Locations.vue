@@ -14,39 +14,38 @@
 
 <script>
 export default {
-    data() {
-        return {
-            name: "Locations",
-            msg: "Welcome to Your Vue.js App",
-            locationUrl:
-                "https://travel-bug-backend.herokuapp.com/posts/profile/" +
-                this.$route.query.user,
-            locationData: null
-        };
-    },
-    mounted() {
-        fetch(this.locationUrl, {
-            method: "get",
-            mode: "cors",
-            headers: new Headers({ "Content-Type": "application/json" })
-        })
-            .then(resp => resp.json())
-            .then(resp => {
-                this.locationData = resp.posts;
-                console.log(resp);
-            });
-    }
+  data() {
+    return {
+      name: "Locations",
+      msg: "Welcome to Your Vue.js App",
+      locationUrl:
+        "https://travel-bug-backend.herokuapp.com/posts/profile/" +
+        this.$route.query.user,
+      locationData: null
+    };
+  },
+  mounted() {
+    fetch(this.locationUrl, {
+      method: "get",
+      mode: "cors",
+      headers: new Headers({ "Content-Type": "application/json" })
+    })
+      .then(resp => resp.json())
+      .then(resp => {
+        this.locationData = resp.posts;
+        console.log(resp);
+      });
+  }
 };
 </script>
  
 <style>
 .destination-ol {
-      background-color: #cc444a;
-      border-radius: 6px;
+  background-color: #cc444a;
+  border-radius: 6px;
 }
 .destination-li {
-    color: white;
-    padding: 4px;
-    
+  color: white;
+  padding: 4px;
 }
 </style>

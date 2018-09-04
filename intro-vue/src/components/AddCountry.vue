@@ -47,6 +47,8 @@
 </template>
 
 <script>
+import router from '../router';
+
 export default {
   name: "AddCountry",
   data() {
@@ -86,8 +88,9 @@ export default {
           return resp.json();
         })
         .then(
-          setTimeout(function() {
-            location.reload();
+          setTimeout(function(userid) {
+            router.push({ path: "main", query: { user: userid } });
+            // router.push({ path: "/main" });
           }, 1000)
         );
     }
