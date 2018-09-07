@@ -22,10 +22,11 @@
       <b-button @click.prevent='bool' variant='danger' type="submit" id='signButton'>Sign In</b-button>
       <div class='horizontal'>
       <div id="alertMessage"><p></p></div>
-      <hr>
+<div>
       <div class='new'><p>New to TravelBug?</p></div>
       <div>
         <b-button v-on:click.prevent='registerSeen = true,  logseen = false' type='submit' class="signButton" name='button'>Sign up now!</b-button>
+        </div>
         </div>
       </div>
  </b-form>
@@ -104,6 +105,9 @@ export default {
 }
 .jumbotron {
   background: rgba(0, 0, 0, 0.568);
+  /* display: flex;
+  flex-direction: row; */
+
 }
 .lead {
   display: flex;
@@ -112,14 +116,14 @@ export default {
   flex-direction: column-reverse;
 }
 .horizontal {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 #signButton {
   border-style: solid;
   border-color: black;
 }
 #alertMessage {
-  background: rgba(255, 255, 255, 0.4);
+  /* background: rgba(255, 255, 255, 0.4); */
 }
 </style>
