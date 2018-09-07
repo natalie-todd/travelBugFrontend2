@@ -20,7 +20,14 @@
                       placeholder="Enter password">
         </b-form-input>
       <b-button @click.prevent='bool' variant='danger' type="submit" id='signButton'>Sign In</b-button>
+      <div class='horizontal'>
       <div id="alertMessage"><p></p></div>
+      <hr>
+      <div class='new'><p>New to TravelBug?</p></div>
+      <div>
+        <b-button v-on:click.prevent='registerSeen = true,  logseen = false' type='submit' class="signButton" name='button'>Sign up now!</b-button>
+        </div>
+      </div>
  </b-form>
  </div>
   </template>
@@ -103,6 +110,10 @@ export default {
   align-items: center;
   justify-content: center;
   flex-direction: column-reverse;
+}
+.horizontal {
+display: flex;
+flex-direction: column;
 }
 #signButton {
   border-style: solid;
