@@ -22,11 +22,9 @@
       <b-button @click.prevent='bool' variant='danger' type="submit" id='signButton'>Sign In</b-button>
       <div class='horizontal'>
       <div id="alertMessage"><p></p></div>
-<div>
       <div class='new'><p>New to TravelBug?</p></div>
       <div>
         <b-button v-on:click.prevent='registerSeen = true,  logseen = false' type='submit' class="signButton" name='button'>Sign up now!</b-button>
-        </div>
         </div>
       </div>
  </b-form>
@@ -34,29 +32,29 @@
   </template>
   <template slot='register'>
     <div v-if='registerSeen' id='registerForm'>
-        <form v-on:submit.prevent='checkFields()'>
+        <b-form v-on:submit.prevent='checkFields()'>
         <h3>We are excited for your new ventures!</h3>
         <p class="error-message"></p>
         <p class="success-message"></p>
         <div>
-            <input placeholder='First Name' type='text' v-model= "firstName" name='firstName' id='firstName' value=''>
+            <b-form-input placeholder='First Name' type='text' v-model= "firstName" name='firstName' id='firstName' value=''></b-form-input>
             </div>
             <div>
-              <input placeholder='Last Name' type='text' v-model= "lastName" name='lastName' id='lastName' value=''>
+              <b-form-input placeholder='Last Name' type='text' v-model= "lastName" name='lastName' id='lastName' value=''></b-form-input>
                                 </div>
                                 <div>
-                                    <input placeholder='Email' type='text' v-model= "email" name='email' id='email' value=''>
+                                    <b-form-input placeholder='Email' type='text' v-model= "email" name='email' id='email' value=''></b-form-input>
                                 </div>
                                 <div>
-                                    <input placeholder='Username' type='text' v-model= "registerUsername" name='registerUsername' id='username' value=''>
+                                    <b-form-input placeholder='Username' type='text' v-model= "registerUsername" name='registerUsername' id='username' value=''></b-form-input>
                                 </div>
                                 <div>
-                                    <input placeholder='Password' type='text' v-model= "registerPassword" name='registerPassword' id='passWord' value=''>
+                                    <b-form-input placeholder='Password' type='text' v-model= "registerPassword" name='registerPassword' id='passWord' value=''></b-form-input>
                                 </div>
                                 <div>
                                     <button type='submit' class="signButton" name='button'>Create Profile</button>
                                 </div>
-                            </form>
+                            </b-form>
       </div>
     </template>
             </b-jumbotron>
