@@ -1,9 +1,8 @@
 ## Contributors
 
 Natalie Todd
-Tom Cluckies
-Ryan McCrory
-RJ Kirkhope
+natalie.todd15@gmail.com
+https://www.linkedin.com/in/natalie-todd/
 
 ## Travel Bug Description
 
