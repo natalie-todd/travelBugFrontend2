@@ -1,9 +1,8 @@
 ## Contributors
 
 Natalie Todd
-Tom Cluckies
-Ryan McCrory
-RJ Kirkhope
+natalie.todd15@gmail.com
+https://www.linkedin.com/in/natalie-todd/
 
 ## Travel Bug Description
 
@@ -40,3 +39,5 @@ https://travel-bug-backend.herokuapp.com/posts
 ## Travel Bug Back End Github Repo
 
 https://github.com/ryanmccrory83/travelBugBackend
+
+<img src='./src/TravelBug.png' alt='travelbug login'>
